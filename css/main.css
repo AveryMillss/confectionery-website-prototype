@@ -250,6 +250,18 @@ section p {
   transform: translate(-50%, -50%);
 }
 
+.vegan figcaption:hover {
+  color: red;
+}
+
+.nutfree figcaption:hover {
+  color: red;
+}
+
+.glutenfree figcaption:hover {
+  color: red;
+}
+
 .creators {
   background: rgba(255, 255, 255, .5);
   padding-top: 3em;
@@ -387,6 +399,10 @@ footer p {
     width: 50%;
   }
 
+  .candy p {
+    flex-grow: 1;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -400,6 +416,39 @@ footer p {
     display: inline-block;
     flex-direction: row;
     text-align: left;
+  }
+
+  .side {
+    display: flex;
+  }
+
+  .holiday  {
+    display: inline-block;
+  }
+
+  .special img {
+    display: block;
+    width: 200%;
+  }
+
+  .newyear img {
+    display: block;
+    width: 200%;
+  }
+
+  .options {
+    margin-top: 0;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .creators {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .creators img {
+    width: 50%;
   }
 
 }
