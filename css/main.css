@@ -63,20 +63,19 @@ nav ul {
 li .navi {
   display: inline-block;
   padding: 0;
-  display: block;
 }
 
 nav a {
   text-decoration: none;
   color: #53C287;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: 'Sulphur Point', sans-serif;
   display: block;
   padding: .5em 1em;
 }
 
 nav a:hover {
-
+  background-color: #FEFFCC;
 }
 
 li h3 {
@@ -102,7 +101,7 @@ section li {
 }
 
 .candy {
-  max-width: 50%;
+  max-width: 100%;
   list-style-type: none;
   display: inline-block;
 }
@@ -111,7 +110,7 @@ section h2 {
   display: block;
   text-align: center;
   color: #FF5733;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .candy img {
@@ -136,52 +135,299 @@ section p {
   font-family: 'Sulphur Point', sans-serif;
   color: black;
   text-decoration: none;
-  font-size: .5em;
+  font-size: .7em;
   margin-top: 0;
   padding: 0 1em;
+  min-width: 15em;
 }
 
 section ul {
   display: inline-block;
-  width: 100%;
-  padding: .5em;
+  text-align: center;
+  padding-right: 3em;
 }
 
-NEXT______________
-
 .special {
-  margin: 0;
-  width: 100px;
-  position: relative;
+  width: 100%;
   display: flex;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .special img {
   width: 100%;
 }
 
-.christmas figcaption {
+.special figcaption {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #53C490;
   position: absolute;
-  left: 90px;
-  top: 70em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.newyears figcaption {
-  position: absolute;
-
+.newyear {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
+.newyear img {
+  width: 100%;
+}
+
+.newyear figcaption {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #53C490;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.options {
+  margin-top: 4em;
+}
+
+.vegan {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.vegan .img-flex {
+  width: 100%;
+}
+
+.vegan figcaption {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.5em;
+  color: #FF5733;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nutfree {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nutfree .img-flex {
+  width: 100%;
+}
+
+.nutfree figcaption {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.5em;
+  color: #FF5733;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.glutenfree {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.glutenfree .img-flex {
+  width: 100%;
+}
+
+.glutenfree figcaption {
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 1.5em;
+  color: #FF5733;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.creators {
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.beau img {
+  display: block;
+  margin: auto;
+}
+
+.beau h2{
+  font-size: 1.5em;
+  font-family: 'Lobster Two', cursive;
+  display: block;
+  text-align: center;
+  color: #53C490;
+}
+
+.mary h2 {
+  font-size: 1.5em;
+  font-family: 'Lobster Two', cursive;
+  display: block;
+  text-align: center;
+  color: #53C490;
+}
+
+.beau a {
+  color: #53C490;
+}
+
+.mary a {
+  color: #53C490;
+}
+
+.mary img {
+  display: block;
+  margin: auto;
+}
+
+footer {
+  background-color: #FEFFAA;
+  overflow: hidden;
+}
+
+footer p {
+  font-size: 1.5em;
+  font-family: 'Lobster Two', cursive;
+  display: block;
+  text-align: center;
+}
 
 @media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 120%;
+  }
+
+  nav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  section h2 {
+    font-size: 1em;
+  }
+
+  header {
+    height: 9em;
+  }
+
 }
 
   @media only screen and (min-width: 38em) {
+
+html {
+  font-size: 130%;
+}
+
+
+nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav li {
+  display: flex;
+  flex-direction: row;
+}
+
+.favs li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.favs img {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.favs p {
+  margin: auto;
+}
+
+.holiday {
+  display: flex;
+  flex-direction: row;
+}
+
+.special, .newyear {
+  width: 50%;
+}
+
+.creators {
+  display: flex;
+  flex-direction: row;
+}
+
+.creators div {
+  width: 50%;
 }
 
 @media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 140%;
+  }
+
+  section ul {
+    display: inline-block;
+    flex-direction: row;
+    text-align: left;
+  }
+
+
+
 }
 
-  @media only screen and (min-width: 90em) {
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 150%;
+  }
+
+  section li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  section p {
+    max-width: 50em;
+  }
 }
