@@ -64,14 +64,18 @@ li .navi {
 nav a {
   text-decoration: none;
   color: #53c287;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: "Sulphur Point", sans-serif;
   display: block;
-  padding: .5em 1em;
+  padding: .5em 2em;
+  border: solid 1px #feffaa;
+  background-color: #feffaa;
+  background: rgba(255, 255, 255, .5);
 }
 
 nav a:hover {
   background-color: #feffcc;
+  color: #008B8B;
 }
 
 li h3 {
@@ -107,6 +111,10 @@ section h2 {
   text-align: center;
   color: #ff5733;
   font-size: 1.3em;
+}
+
+.favs a:hover {
+  color: red;
 }
 
 .candy img {
@@ -155,6 +163,9 @@ section p {
   text-align: center;
   color: #53c490;
   position: absolute;
+  border: solid 2px #feffaa;
+  background-color: #feffaa;
+  background: rgba(255, 255, 255, .5);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -178,6 +189,9 @@ section p {
   text-align: center;
   color: #53c490;
   position: absolute;
+  border: solid 2px #feffaa;
+  background-color: #feffaa;
+  background: rgba(255, 255, 255, .5);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -204,6 +218,7 @@ section p {
   font-size: 1.5em;
   color: #ff5733;
   position: absolute;
+  padding: .5em 3em;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -279,6 +294,14 @@ section p {
   display: block;
   text-align: center;
   color: #53c490;
+  border: solid 2px #feffaa;
+  background-color: #feffaa;
+  margin: .5em;
+}
+
+.creators h2:hover {
+  color: #008B8B;
+  background: rgba(255, 255, 255, .5);
 }
 
 .mary h2 {
@@ -287,6 +310,9 @@ section p {
   display: block;
   text-align: center;
   color: #53c490;
+  border: solid 2px #feffaa;
+  background-color: #feffaa;
+  margin: .5em;
 }
 
 .beau a {
@@ -307,10 +333,41 @@ footer {
   overflow: hidden;
 }
 
-footer p {
-  font-size: 1.5em;
+footer h2 {
+  font-size: 2em;
   font-family: "Lobster Two", cursive;
   display: block;
+  text-align: center;
+  margin: 0;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 4em;
+  margin-bottom: 2em;
+}
+
+footer img {
+  width: 33.3333%;
+}
+
+footer a {
+  text-align: center;
+  display: flex;
+  color: #53c490;
+  font-size: 1em;
+  padding: .5em;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #008B8B;
+}
+
+footer p {
+  font-size: 1em;
   text-align: center;
 }
 
@@ -412,6 +469,10 @@ footer p {
     line-height: 1.5;
   }
 
+  h1 {
+    font-size: 2em;
+  }
+
   section ul {
     display: inline-block;
     flex-direction: row;
@@ -438,18 +499,21 @@ footer p {
 
   .options {
     margin-top: 0;
-    width: 50%;
+    width: 100%;
     display: inline-block;
   }
 
-  .creators {
+  footer {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: space-around;
   }
 
-  .creators img {
-    width: 50%;
+  footer h2 {
+    margin-top: 1em;
+  }
+
+  .links {
+    margin-top: 2em;
   }
 
 }
@@ -458,16 +522,6 @@ footer p {
 
   html {
     font-size: 130%;
-  }
-
-  section li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  section p {
-    max-width: 50em;
   }
 
 }
