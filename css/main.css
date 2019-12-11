@@ -422,7 +422,7 @@ footer p {
     display: flex;
   }
 
-  .holiday  {
+  .holiday {
     display: inline-block;
   }
 
@@ -442,13 +442,13 @@ footer p {
     display: inline-block;
   }
 
-  .creators
+  .creators {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  .creators img
+  .creators img {
     width: 50%;
   }
 
