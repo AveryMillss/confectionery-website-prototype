@@ -64,7 +64,7 @@ li .navi {
 nav a {
   text-decoration: none;
   color: #53c287;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Sulphur Point", sans-serif;
   display: block;
   padding: .5em 2em;
@@ -74,7 +74,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #feffcc;
+  background-color: white;
   color: #008B8B;
 }
 
@@ -110,8 +110,16 @@ section h2 {
   display: block;
   text-align: center;
   color: #ff5733;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
+
+.favs h2 {
+  font-family: "Lobster Two", cursive;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, .5);
+  padding: .6em 0;
+}
+
 
 .favs a:hover {
   color: red;
@@ -378,28 +386,8 @@ footer p {
     line-height: normal;
   }
 
-  nav ul {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  nav li {
-    display: flex;
-    flex-direction: row;
-  }
-
-  nav a {
-    font-size: 1em;
-  }
-
   section h2 {
     font-size: 1em;
-  }
-
-  header {
-    height: 9em;
   }
 
 }
@@ -416,6 +404,25 @@ footer p {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
+  }
+  nav ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  header {
+    height: 9em;
   }
 
   nav li {
@@ -522,6 +529,14 @@ footer p {
 
   html {
     font-size: 130%;
+  }
+
+  .holiday figcaption {
+    font-size: 2.7em;
+  }
+
+  .options figcaption {
+    font-size: 2.5em;
   }
 
 }
